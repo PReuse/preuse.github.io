@@ -1,99 +1,278 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Pieter Reuse in Software</title>
-	<link rel="stylesheet" href="style.css" type="text/css">
-</head>
-<body>
-	<div id="header">
-		<div>
-			<a href="index.html" class="logo">
-			<h1>Pieter Reuse</h1>
-			</a>
-		</div>
-	</div>
-	<div id="body">
-		<div class="body">
-			<h1>Apache Hadoop contributions and backend development projects</h1>
-			<small><span>list of recent projects and contributions</span> </small>
-		</div>
-		<div class="footer">
-			<div class="aside">
-				<div>
-					<h3>Projects</h3>
-					<p>
-						06.2016 - now : untitled project +<br/>
-						09.2015 - now : S3A, an S3-FileSystem for Hadoop*<br/>
-						07.2015 - 03.2016 : <a href="https://textthebutler.be">Text the Butler</a> +<br/>
-						04.2015 - 03.2016 : Flame, internal Amplidata-project +* <br/>
-						09.2014 - 02.2015 : MAPP, internal ING-project * <br/>
-						01.2014 - 06.2014 : <a href="http://astrid.ugent.be/ek/">WK-pronostiek</a> for Home Astrid +<br/>
-						03.2013 - 02.2014 : <a href="http://skedify.me/">Skedify</a> <br/>
-						<br/>
-						*as a fulltime job <br/>
-						+lead (backend) developer
-					</p>
-				</div>
-			</div>
-			<div class="article">
-				<h3>Contributions</h3>
-				<div>
-					<span>20/10/2016: fix ITestS3AFileContextStatistics.testStatistics()</span>
-					<p>
-						Developed the patch to fix a failing unit test (and thus wrong FileSystem behaviour), <a href="https://issues.apache.org/jira/browse/HADOOP-13735">link</a>. Accepted into Apache Hadoop.
-					</p>
-				</div>
-				<div>
-					<span>Work in progress: Add a Blobstore interface to add to blobstore FileSystems</span>
-					<p>
-						Developed patch version 7, under review, <a href="https://issues.apache.org/jira/browse/HADOOP-9565">link</a>.
-					</p>
-				</div>
-				<div>
-					<span>Reviewed 'Allow HDFS block replicas to be provided by an external storage system'</span>
-					<p>
-						Reviewed design document in collaboration with colleagues, <a href="https://issues.apache.org/jira/browse/HDFS-9806">link</a>.
-					</p>
-				</div>
-				<div>
-					<span>19/07/16: Branch-2: S3a to use thread pool that blocks clients</span>
-					<p>
-						Developed patch accepted into Apache Hadoop, <a href="https://issues.apache.org/jira/browse/HADOOP-13139">link</a>.
-					</p>
-				</div>
-				<div>
-					<span>12/05/16: Recover when S3A fails on IOException in read()</span>
-					<p>
-						Found, reported and developed fix for a bug in cooperation with a colleague. 
-						Was not accepted into Apache Hadoop as a parallel effort fixed the same bug.
-						<a href="https://issues.apache.org/jira/browse/HADOOP-12844">link</a>.
-					</p>
-				</div>
-				<div>
-					<span>03/04/16: ListStatus on empty dir in S3A lists itself instead of returning an empty list</span>
-					<p>
-						Found, reported and developed fix for a bug. Accepted into Apache Hadoop.
-						<a href="https://issues.apache.org/jira/browse/HADOOP-12169">link</a>.
-					</p>
-				</div>
-				<div>
-					<span>12/01/16: Enable YARN to use S3A</span>
-					<p>
-						Developed patch version 6 through 9, which significantly expanded S3A test coverage.
-						Accepted into Apache Hadoop, <a href="https://issues.apache.org/jira/browse/HADOOP-11262">link</a>.
-					</p>
-				</div>
-				<div>
-					<span>26/09/15: Listing an empty s3a root directory throws FileNotFound.</span>
-					<p>
-						Developed version 2 and 3 of this patch, which got accepted after minor changes, <a href="https://issues.apache.org/jira/browse/HADOOP-11918">link</a>.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="footer">
-	</div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pieter Reuse's Software development projects and contributions</title>
+        <link rel="stylesheet" href="timeline.css" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="row">
+                <ul class="timeline">
+
+                    <li class="header">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h2>Open source contributions and (backend) software development projects of Pieter Reuse</h2>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="first">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h2>Projects</h2>
+                            </div>
+                            <div class="timeline-body">
+                            </div>
+                            <div class="timeline-footer">
+                                <p>*: as a fulltime job <br/>
+                                    +: as lead (backend) developer</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h2>Open source software contributions</h2>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>fix failing test ITestS3AFileContextStatistics.testStatistics()</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p><a href="https://issues.apache.org/jira/browse/HADOOP-13735">Contributed</a> the patch to fix a failing unit test (and thus wrong FileSystem behaviour). Accepted into Apache Hadoop.</p>
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">20/10/2016</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Untitled start-up project +</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>A more elaborate description of this project will be added when the project is made public.</p>
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">06/2016 - now</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li  class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Branch-2: S3a to use thread pool that blocks clients</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p><a href="https://issues.apache.org/jira/browse/HADOOP-13139">Contributed</a> patch accepted into Apache Hadoop.</p>
+                            </div>
+                            <div class="timeline-footer primary">
+                                <p class="text-right">19/07/16</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>S3A, an S3-FileSystem for Hadoop *</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>S3A is the recommended S3-client for Hadoop 2.7 and later<br/>
+                                    A successor to the s3n:// filesystem, the S3a: system uses Amazon's libraries to interact with S3. This allows S3a to support larger files, higher performance operations and more.
+                                    S3A has been usable in production since Hadoop 2.7, and is undergoing active maintenance for enhanced security, scalability and performance. </p>
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">09/2015 - now</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li  class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Allow HDFS block replicas to be provided by an external storage system</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p><a href="https://issues.apache.org/jira/browse/HDFS-9806">Reviewed</a> design document in collaboration with colleagues.</p>
+                            </div>
+                            <div class="timeline-footer primary">
+                                <p class="text-right">09/06/16</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Text the Butler +</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p><a href="https://textthebutler.be">Text The Butler</a>
+                                    is a startup bringing the comfort of having a butler with the ease of being only a text away.</p>
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">07/2015 - 03/2016</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li  class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Recover when S3A fails on IOException in read()</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Found, reported and <a href="https://issues.apache.org/jira/browse/HADOOP-12844">contributed fix</a>
+                                    for a bug in cooperation with a colleague.  <br/>
+                                    Was not accepted into Apache Hadoop as a parallel effort fixed the same bug.</p>
+                            </div>
+                            <div class="timeline-footer primary">
+                                <p class="text-right">12/05/16</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Flame +*</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Flame, a closed-source component of the <a href="http://amplidata.com/">Amplidata</a>-software stack,
+                                    is a metadata-iterator written in Java leveraging the multi-node execution capabilities of Apache Spark.</p>
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">04/2015 - 03/2016</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li  class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Add a Blobstore interface to add to blobstore FileSystems</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p><a href="https://issues.apache.org/jira/browse/HADOOP-9565">Contributed</a> patch version 7, under review.</p>
+                            </div>
+                            <div class="timeline-footer primary">
+                                <p class="text-right">08/04/16</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>MAPP *</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>MAPP, a closed-source interal project at ING Belgium,
+                                    is a Java/Swing based application used for the sale and trading of financial products.</p>
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">09/2014 - 02/2015</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li  class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>ListStatus on empty dir in S3A lists itself instead of returning an empty list</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Found, reported and <a href="https://issues.apache.org/jira/browse/HADOOP-12169">contributed fix</a>
+                                    for a bug in the S3A-filesystem. Patch accepted into Apache Hadoop.</p>
+                            </div>
+                            <div class="timeline-footer primary">
+                                <p class="text-right">03/04/16</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4><a href="http://astrid.ugent.be/ek/">WK-pronostiek</a> for Home Astrid +</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>For Home Astrid, a student dorm of Ghent University, I developed a website where 
+                                    individual students could enter and alter their predictions for the 64 matches of 
+                                    the 2014 FIFA World Cup Football. <br/>
+                                    Participants could alter their prediction up to 30 minutes before the match was played;
+                                    any attempts to alter the score after this moment were blocked server-side.
+                                    Scoring of predictions also happened automatically, as well as updating the live ranking.</p>
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">01/2014 - 06/2014</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li  class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Enable YARN to use S3A</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p><a href="https://issues.apache.org/jira/browse/HADOOP-11262">Contributed patch versions 6 through 9</a>,
+                                    which significantly expanded unit-test coverage of the S3A Filesystem.
+                                    Patch accepted into Apache Hadoop.</p>
+                            </div>
+                            <div class="timeline-footer primary">
+                                <p class="text-right">12/01/16</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li  class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Listing an empty s3a root directory throws FileNotFound</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p><a href="https://issues.apache.org/jira/browse/HADOOP-11918">Contributed version 2 and 3</a>
+                                    of this patch, which got accepted into Apache Hadoop after minor changes.</p>
+                            </div>
+                            <div class="timeline-footer primary">
+                                <p class="text-right">26/09/15</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="last">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Skedify</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p><a href="http://skedify.me">Skedify</a>, a company I co-founded,
+                                    started off under the name Cloudcube. Skedify develops a 
+                                    Software-as-a-service solution for managing appointments of costumers.</p>
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">03/2013 - 02/2014</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="clearfix no-float"></li>
+                </ul>
+            </div>
+        </div>
+
+    </body>
 </html>
