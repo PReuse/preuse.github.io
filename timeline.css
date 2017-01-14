@@ -1,6 +1,4 @@
 body{
-    /*background: #cccccc;*/
-    /*background: #ddffdd;*/
     background: #a6b1e1;
 }
 
@@ -16,7 +14,7 @@ body{
 }
 .timeline:before {
     top: 150px;
-    bottom: 50px;
+    bottom: 30px;
     position: absolute;
     content:" ";
     width: 2px;
